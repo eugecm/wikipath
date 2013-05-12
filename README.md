@@ -1,6 +1,6 @@
 # wikipath
 
-A program to find a path between two wikipedia articles. It is my first
+A program to find a path between two Wikipedia articles. It is my first
 clojure program. Makes use of [ubigraph](http://ubietylab.net/ubigraph/) to
 display the explored tree.
 
@@ -9,6 +9,7 @@ display the explored tree.
  * Provide a way to cache the results so we don't make unnecessary requests.
  * Refactor messy code, hard-coded strings and the like.
  * Implement more searching algorithms. Right now there's only depth-first.
+ * Possibly make use of a more suited data-type to represent trees.
 
 ## Important
 

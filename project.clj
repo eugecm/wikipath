@@ -1,4 +1,8 @@
-(defproject app "0.1-pre"
+(defproject wikipath "0.1-pre"
   :description "A program to find a path between to wiki articles"
-  :dependencies [[org.clojure/clojure "1.5.0"] 
-                 [org.clojure/data.xml "0.0.7"]])
+  :main app.wikipath
+  :dependencies [[ubigraph "0.2.4"]
+                [org.apache.xmlrpc/xmlrpc-client "3.1.3"]
+                [org.clojure/data.xml "0.0.7"]
+                [org.clojure/clojure "1.3.0"]]
+  :repositories {"local" ~(str (.toURI (java.io.File. "maven_rep")))})

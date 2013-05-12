@@ -60,16 +60,16 @@
     (send-off ubi-agent drawEdge parent child)
     (swap! tree assoc child parent))
 
-(defn explore [parent target & {:keys [max-deepth max-breadth deep path]
-                            :or {max-deepth 100 max-breadth 100 deep 0 path []}}] ;Ponerlo bonito
-    (if (>= deep max-deepth) nil
+(defn explore [parent target & {:keys [max-depth max-breadth deep path]
+                            :or {max-depth 100 max-breadth 100 deep 0 path []}}] ;Ponerlo bonito
+    (if (>= deep max-depth) nil
         (if (= target parent) (cons parent path)
             (let [children (take max-breadth (getLinks parent))]
                 (some identity
                     (map #(do
                             (addToTree wikiTree parent %)
                             (explore % target :deep (inc deep) 
-                                       :max-deepth max-deepth 
+                                       :max-depth max-depth 
                                        :max-breadth max-breadth
                                        :path (cons parent path))) children))))))
 (defn colorVertex [ubi v color]
@@ -86,7 +86,7 @@
     (let [source (read-line)]
         (println "Enter a target")
         (let [target (read-line)
-              path (explore source target :max-deepth 4 :max-breadth 6)]
+              path (explore source target :max-depth 4 :max-breadth 6)]
             (prn path)
             (println "Done, discovered: " (count @index))
             (showPath path))))

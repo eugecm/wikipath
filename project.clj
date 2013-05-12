@@ -5,4 +5,4 @@
                 [org.apache.xmlrpc/xmlrpc-client "3.1.3"]
                 [org.clojure/data.xml "0.0.7"]
                 [org.clojure/clojure "1.3.0"]]
-  :repositories {"local" ~(str (.toURI (java.io.File. "maven_rep")))})
+  :repositories {"local" "file:maven_rep"})

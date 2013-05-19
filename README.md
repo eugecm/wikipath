@@ -1,5 +1,7 @@
 # wikipath
 
+Authors: Eugenio Cano-Manuel Mendoza, Federico José Sörenson Sánchez.
+
 A program to find a path between two Wikipedia articles. It is my first
 clojure program. Makes use of [ubigraph](http://ubietylab.net/ubigraph/) to
 display the explored tree.

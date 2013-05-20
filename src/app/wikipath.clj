@@ -108,7 +108,8 @@
                             (explore-dfs % target :deep (inc deep) 
                                        :max-depth max-depth 
                                        :max-breadth max-breadth
-                                       :path (cons parent path))) children))))))
+                                       :path (cons parent path))) 
+                        children))))))
 
 ;Breadth-first search. Returns a path between start and end, nil if the path
 ;was not found. "iters" is the number of nodes to expand.

@@ -67,6 +67,8 @@
         (.setVertexStyleAttribute 0 "shape" "sphere")
         (.setVertexStyleAttribute 0 "shapedetail" "5")
         (.setVertexStyleAttribute 0 "size" "0.8")
+        (.setEdgeStyleAttribute 0 "width" "3.0")
+        (.setEdgeStyleAttribute 0 "color" "#dddddd")
         (.setVertexStyleAttribute 0 "fontsize" "8")))
 
 ;Draw a vertex and add a label, return the index.

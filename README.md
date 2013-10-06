@@ -19,8 +19,8 @@ it from the Ubigraph website.
  * Provide a way to cache the results so we don't make unnecessary requests.
  * Refactor messy code, hard-coded strings and the like.
  * Make it independent of Ubigraph (and any other visualization method).
- * Implement more searching algorithms. Right now there's only depth-first.
- * Possibly make use of a more suited data-type to represent trees.
+ * Implement more searching algorithms. Currently implemented: depth-first search and breadth-first search.
+ * Possibly make use of a more suitable data-type to represent trees.
 
 ## Important
 

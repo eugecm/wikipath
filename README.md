@@ -1,5 +1,7 @@
 # wikipath
 
+![Demo image](https://raw.github.com/keidesu/wikipath/master/demo.png)
+
 Authors: Eugenio Cano-Manuel Mendoza, Federico José Sörenson Sánchez.
 
 A program to find a path between two Wikipedia articles. It is my first
